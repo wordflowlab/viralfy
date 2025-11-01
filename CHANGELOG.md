@@ -5,6 +5,89 @@ All notable changes to Viralfy will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.0] - 2025-11-02
+
+### ✨ Added
+
+#### CSV Import Feature
+- **CSV Parser Infrastructure** (`scripts/bash/csv-parser.sh`)
+  - Generic CSV parsing functions
+  - Data validation and cleaning utilities
+  - Statistical analysis functions (average, median, standard deviation)
+  - Number normalization (handles K/M suffixes, commas)
+  - Column extraction and data transformation
+
+- **Twitter CSV Import** (`viralfy validate`)
+  - Import Twitter Analytics CSV data
+  - Automatic baseline calculation (averages)
+  - High-performance detection (> 3x average)
+  - Multi-dimensional scoring algorithm (0-100)
+  - Batch processing of tweet history
+
+- **YouTube CSV Import** (`viralfy validate`)
+  - Import YouTube Studio CSV data
+  - View threshold (100k+ or 3x average)
+  - Like rate and engagement calculation
+  - Multi-dimensional scoring algorithm (0-100)
+  - Batch processing of video analytics
+
+#### Scoring System
+- **Twitter Scoring Algorithm**
+  - Engagement data (40%): relative to average
+  - Spread speed (30%): impressions vs average
+  - Audience quality (20%): engagement rate
+  - Absolute value (10%): engagement tiers
+
+- **YouTube Scoring Algorithm**
+  - Engagement data (40%): likes vs average
+  - Spread speed (30%): views vs average
+  - Audience quality (20%): like rate
+  - Absolute value (10%): view count tiers
+
+#### Documentation
+- **CSV Import Guide** (`docs/CSV_IMPORT_GUIDE.md`)
+  - Complete Twitter Analytics export tutorial
+  - Complete YouTube Studio export tutorial
+  - Scoring system explanation
+  - Troubleshooting and FAQ
+  - 6,000+ words comprehensive guide
+
+- **CSV Examples** (`templates/csv-examples/`)
+  - Twitter sample CSV with 10 entries
+  - YouTube sample CSV with 10 entries
+  - Format documentation and usage instructions
+
+#### User Interface
+- **Updated Validation Flow** (`templates/commands/validate.md`)
+  - New option: Import Twitter CSV
+  - New option: Import YouTube CSV
+  - Detailed success/error messages
+  - Export instructions and help links
+
+### 🎯 Enhanced
+
+- **Idea Validation Module**
+  - From manual-only to CSV batch import
+  - Data-driven topic validation
+  - Automatic scoring (was 0 for all)
+  - Better metrics tracking
+
+- **validate.sh Script**
+  - Added `import-twitter-csv` command
+  - Added `import-youtube-csv` command
+  - Added `add_topic_from_csv` helper function
+  - Added `calculate_twitter_score` function
+  - Added `calculate_youtube_score` function
+
+### 📊 Impact
+
+- **Zero-cost solution**: No API fees required
+- **Batch processing**: Analyze hundreds of posts at once
+- **Data-driven**: Based on real performance metrics
+- **Immediate availability**: Works with official platform exports
+
+---
+
 ## [0.1.0] - 2025-11-02
 
 ### 🎉 Initial Release - Beta
