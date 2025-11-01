@@ -1,6 +1,6 @@
 {
   "name": "viralfy",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "AI-powered viral content ecosystem - From idea validation to multi-platform distribution",
   "main": "dist/cli.js",
   "type": "module",
@@ -54,10 +54,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-org/viralfy.git"
+    "url": "https://github.com/wordflowlab/viralfy.git"
   },
   "bugs": {
-    "url": "https://github.com/your-org/viralfy/issues"
+    "url": "https://github.com/wordflowlab/viralfy/issues"
   },
-  "homepage": "https://github.com/your-org/viralfy#readme"
+  "homepage": "https://github.com/wordflowlab/viralfy#readme"
 }
