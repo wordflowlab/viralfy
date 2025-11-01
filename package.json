@@ -1,0 +1,63 @@
+{
+  "name": "viralfy",
+  "version": "1.0.0",
+  "description": "AI-powered viral content ecosystem - From idea validation to multi-platform distribution",
+  "main": "dist/cli.js",
+  "type": "module",
+  "bin": {
+    "viralfy": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/cli.ts",
+    "start": "node dist/cli.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "content",
+    "ai",
+    "viral",
+    "newsletter",
+    "social-media",
+    "distribution",
+    "meta-prompting",
+    "content-creation",
+    "twitter",
+    "xiaohongshu",
+    "linkedin",
+    "youtube"
+  ],
+  "author": "Viralfy Team",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@commander-js/extra-typings": "^12.0.0",
+    "chalk": "^5.3.0",
+    "fs-extra": "^11.2.0",
+    "inquirer": "^9.2.12",
+    "js-yaml": "^4.1.0",
+    "marked": "^14.1.3",
+    "marked-terminal": "^7.1.0",
+    "ora": "^8.0.1",
+    "axios": "^1.6.0"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/inquirer": "^9.0.7",
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^20.10.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-org/viralfy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-org/viralfy/issues"
+  },
+  "homepage": "https://github.com/your-org/viralfy#readme"
+}

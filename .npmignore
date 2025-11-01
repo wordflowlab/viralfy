@@ -1,0 +1,53 @@
+# Source files
+src/
+
+# Documentation
+docs/
+*.md
+!README.md
+
+# Development
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Testing
+test/
+tests/
+*.test.ts
+*.spec.ts
+coverage/
+
+# Build
+tsconfig.json
+tsconfig.*.json
+.eslintrc*
+.prettierrc*
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# CI/CD
+.github/
+.gitlab-ci.yml
+.travis.yml
+
+# Examples
+examples/
+demo/
+
+# Reference materials
+reference-courses/
+
+# Temporary
+*.tmp
+tmp/
+temp/
+
+# Logs
+*.log
+npm-debug.log*
